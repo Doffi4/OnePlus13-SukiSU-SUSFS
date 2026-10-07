@@ -1,0 +1,20 @@
+{
+  "stage": "after",
+  "reference": "42d7fda3d787b7df90fc440a50bb9c8216a3fdef",
+  "abi_mismatches": {},
+  "shared_constants_checked": 56,
+  "additional_feature_and_sepolicy_constants_checked": 26,
+  "sulog_byte_identical": true,
+  "shared_struct_sizes_checked": 28,
+  "shared_struct_field_declarations_identical": true,
+  "app_profile_byte_identical": true,
+  "event_GET_INFO_source_tests": "PASS: services start/skip/reset, once-only boot + SUSFS monitor, EFAULT, builtin GET_INFO and manager flag",
+  "fd_functions_semantically_identical_to_reference": true,
+  "scoped_fd_installed_only_after_successful_exec": true,
+  "scoped_fd_ioctl_permission_gate_preserved": true,
+  "optional_main_only_ioctls": [
+    "KSU_IOCTL_SET_SPOOF_VERSION",
+    "KSU_IOCTL_SET_SPOOF_CPU"
+  ],
+  "uapi5_contract_ready": true
+}

@@ -1,0 +1,18 @@
+{
+  "common": {
+    "baseline_dirty_diff_unchanged": true,
+    "diff_sha256": "85d3ab8fb459662b40366a7053a4f3b960646bd72496e510bd61335425890a7c"
+  },
+  "msm-kernel": {
+    "baseline_dirty_diff_unchanged": true,
+    "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "KernelSU": {
+    "exactly_three_files_changed_since_accepted_baseline": [
+      "kernel/Makefile",
+      "kernel/supercall/dispatch.c",
+      "kernel/include/uapi/supercall.h"
+    ],
+    "arch.h_and_selinux_fix_unchanged": true
+  }
+}

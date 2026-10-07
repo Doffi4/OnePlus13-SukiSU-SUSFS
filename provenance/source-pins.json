@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "url": "https://github.com/OnePlusOSS/kernel_manifest",
+    "commit": "f8e50677874c65b6da41057d2f39be7b4ef3c08a",
+    "file": "oneplus_13_b.xml"
+  },
+  "projects": [
+    {
+      "name": "OnePlus common",
+      "url": "https://github.com/OnePlusOSS/android_kernel_common_oneplus_sm8750",
+      "commit": "e1b346b6b4f4096eb342ae3684838a942fd6f6c4"
+    },
+    {
+      "name": "OnePlus msm-kernel",
+      "url": "https://github.com/OnePlusOSS/android_kernel_oneplus_sm8750",
+      "commit": "6028f47faddaa27700f8dd3a1d83906ea8f27170"
+    },
+    {
+      "name": "OnePlus modules/devicetree",
+      "url": "https://github.com/OnePlusOSS/android_kernel_modules_and_devicetree_oneplus_sm8750",
+      "commit": "d50b305f7da9e14715a25120a4ac7b1a4b8b97c3"
+    },
+    {
+      "name": "SukiSU Ultra builtin",
+      "url": "https://github.com/SukiSU-Ultra/SukiSU-Ultra",
+      "commit": "70fa0e092a2c81060823f8ae526eac14fdda2930"
+    },
+    {
+      "name": "SUSFS",
+      "url": "https://gitlab.com/simonpunk/susfs4ksu",
+      "commit": "a0f9c59e2243f8a5db955f4ad1686d5e0ad26e1a",
+      "branch": "gki-android15-6.6"
+    },
+    {
+      "name": "SukiSU_patch",
+      "url": "https://github.com/ShirkNeko/SukiSU_patch",
+      "commit": "547ae94bcaec53d030398f857950c64662043a5d"
+    },
+    {
+      "name": "AnyKernel3 base",
+      "url": "https://github.com/Numbersf/AnyKernel3",
+      "commit": "47f23f7ece3ef212a392ec9ea5466e5f0b55d3c7"
+    },
+    {
+      "name": "Manager contract reference only",
+      "url": "https://github.com/SukiSU-Ultra/SukiSU-Ultra",
+      "commit": "42d7fda3d787b7df90fc440a50bb9c8216a3fdef",
+      "use": "contract comparison; NOT kernel baseline"
+    }
+  ],
+  "native_target": "//msm-kernel:sun_perf_dist",
+  "toolchain": "clang-r510928",
+  "source_release": "OnePlus .401 / OOS16",
+  "module_audit_release": "CPH2653_16.0.10.501(EX01)",
+  "page_size": 4096,
+  "lto": "thin",
+  "clean_clone_rebuild_validated": false
+}

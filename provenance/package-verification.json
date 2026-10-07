@@ -1,0 +1,104 @@
+{
+  "zip": "outputs/spoofed-uapi5/AnyKernel3_OnePlus13_CPH2653_OP5D55L1_SukiSU40959_UAPI5_SUSFS230_KPM_4K_501trust_spoofed-manager.zip",
+  "zip_sha256": "d12a1b6053abba8dec82a736b450f929ac8742f0aab8f328a79bef56fae824dc",
+  "zip_size": 18545601,
+  "Image_sha256": "21739067ccfdae2f0c31b65b3a969742f1c9f3642b61ca52fe0347aedbdf15ef",
+  "Image_size": 38228032,
+  "Image_byte_equal_to_audited_KPM_Image": true,
+  "all_installer_files_and_modes_identical_to_previously_reviewed_guarded_ZIP": true,
+  "baseline_guarded_ZIP_sha256": "1ad63a1ddd6ef7cdb81c1433093f024f9fed0776ae2815e158ec227ac8e8af78",
+  "strict_device_check": [
+    "CPH2653",
+    "OP5D55L1"
+  ],
+  "do.modules": 0,
+  "do.systemless": 0,
+  "additional_partition_images": [],
+  "inventory": [
+    {
+      "path": "Image",
+      "size": 38228032,
+      "sha256": "21739067ccfdae2f0c31b65b3a969742f1c9f3642b61ca52fe0347aedbdf15ef",
+      "mode": "0o100644"
+    },
+    {
+      "path": "LICENSE",
+      "size": 11630,
+      "sha256": "df6f65da47d459fdf2a2ef0eadb34f37d838befc91352b64a84f35507bea95cd",
+      "mode": "0o100644"
+    },
+    {
+      "path": "META-INF/com/google/android/update-binary",
+      "size": 23862,
+      "sha256": "5e40a39e7b029c18a2c94a6ae9ae3f44d56c02ba9e5d7038a3288917dc1b42f9",
+      "mode": "0o100755"
+    },
+    {
+      "path": "META-INF/com/google/android/updater-script",
+      "size": 115,
+      "sha256": "bb624eb9bfdf3b2ee9f5aa1b6b6324fb05cd0408bb98cfd1397d667076072b31",
+      "mode": "0o100644"
+    },
+    {
+      "path": "anykernel.sh",
+      "size": 1358,
+      "sha256": "979d906ca9b46f633146857c6254f2a7758e1044ed2a8608b10121b7be8bcce2",
+      "mode": "0o100755"
+    },
+    {
+      "path": "tools/ak3-core.sh",
+      "size": 34614,
+      "sha256": "fa978a37851f1d9207f838e634d056db81964a01bf0b1c8061879a8dcf5f6990",
+      "mode": "0o100644"
+    },
+    {
+      "path": "tools/busybox",
+      "size": 1710600,
+      "sha256": "4d60ab3f5a59ebb2ca863f2f514e6924401b581e9b64f602665c008177626651",
+      "mode": "0o100755"
+    },
+    {
+      "path": "tools/fec",
+      "size": 131424,
+      "sha256": "a486890d0fd713557c55af881a78b3fd11a16ff195e29bd8559b0407de08d60e",
+      "mode": "0o100755"
+    },
+    {
+      "path": "tools/httools_static",
+      "size": 742144,
+      "sha256": "9f7285341423ca02e1ff54a05b757db8bb09cfa36802879db3b358ae5a6c96aa",
+      "mode": "0o100755"
+    },
+    {
+      "path": "tools/lptools_static",
+      "size": 618664,
+      "sha256": "da1b80e231bb7576d76e6f57bea4e27706805ec86b9b9c6524ac609c3179b969",
+      "mode": "0o100755"
+    },
+    {
+      "path": "tools/magiskboot",
+      "size": 910296,
+      "sha256": "077bf95aeab6520db017e9bae25829afc2a9d75b15a6be06ddb383841dcdbb03",
+      "mode": "0o100755"
+    },
+    {
+      "path": "tools/magiskpolicy",
+      "size": 358128,
+      "sha256": "dd25b757292d3cf57b2e69447601dc827f73e8f3b1028d711cb03857df8bc3ff",
+      "mode": "0o100755"
+    },
+    {
+      "path": "tools/op13-target.sh",
+      "size": 3390,
+      "sha256": "18983379d88a99c180e2fdd0da4b12c4ce6f15b2df0addda5105509f910a7e04",
+      "mode": "0o100644"
+    },
+    {
+      "path": "tools/snapshotupdater_static",
+      "size": 2235040,
+      "sha256": "708b431da44619a716011153137d18252841ce4eb7f7ab17fe78df02ad2db55c",
+      "mode": "0o100755"
+    }
+  ],
+  "phone_IO": false
+}

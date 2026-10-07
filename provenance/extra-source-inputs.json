@@ -1,0 +1,37 @@
+{
+  "common_additional_files": [
+    {
+      "path": "fs/susfs.c",
+      "upstream": "SUSFS kernel_patches/fs/susfs.c",
+      "sha256": "5521aa600f6df698e1d5e31df72e3557a36d33c161bd65dcafe5788fb56a7fa7"
+    },
+    {
+      "path": "include/linux/susfs.h",
+      "upstream": "SUSFS kernel_patches/include/linux/susfs.h",
+      "sha256": "fafff787b8856bd37a6736c2f0bbc5a57fd1f36232be267936f892fb57bc5120"
+    },
+    {
+      "path": "include/linux/susfs_def.h",
+      "upstream": "SUSFS kernel_patches/include/linux/susfs_def.h",
+      "sha256": "db7f98dcf8119a4eb5c45c05205b6c1065766047d6f803b0e86f3d14b1a251f0"
+    },
+    {
+      "path": "drivers/kernelsu",
+      "kind": "symlink to ../../KernelSU/kernel"
+    },
+    {
+      "path": "certs/oneplus501-public.pem",
+      "included": false,
+      "pem_sha256": "309e5d1b90abc7faa1ae27595759c72e8bbcd47be4276b12e87499b9f52e66d2",
+      "der_sha256": "3d46262092ddcf253f9cf266d16be0bbd44f81bdc888c4d66dd26e388374e01a"
+    }
+  ],
+  "KernelSU_additional_file": {
+    "path": "kernel/include/arch.h",
+    "snapshot": "patches/arch.h",
+    "sha256": "8d633dae366f921408cf599e430bf9a0dea92544cddab907751a7367ef6233ac",
+    "provenance": "accepted restored local header; original upstream commit not established by this presentation task"
+  },
+  "private_signing_state_included": false,
+  "ignored_reject_or_backup_files_included": false
+}

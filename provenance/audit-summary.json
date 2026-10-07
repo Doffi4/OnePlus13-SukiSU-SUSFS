@@ -1,0 +1,51 @@
+{
+  "release": "6.6.118-android15-8-o-ge1b346b6b4f4-4k",
+  "modules": 1068,
+  "origins": {
+    "vendor_boot": 514,
+    "vendor_dlkm": 458,
+    "system_dlkm": 96
+  },
+  "kernel_exports": 9001,
+  "kernel_crcs": 9001,
+  "symvers_crc_crosscheck_mismatches": 0,
+  "checks": {
+    "kernel_imports": 51508,
+    "matching_crcs": 58315,
+    "stock_module_imports": 6807,
+    "modules_with_versions": 1068
+  },
+  "crc_mismatches": 0,
+  "affected_modules": [],
+  "unresolved_imports_in_available_set": 0,
+  "vermagic_values": {
+    "6.6.118-android15-8-o-g6df488d1dbde-4k SMP preempt mod_unload modversions aarch64": 569,
+    "6.6.118-android15-8-o-4k SMP preempt mod_unload modversions aarch64": 403,
+    "6.6.118-android15-8-g2e6b9c3812c5-ab15114928-4k SMP preempt mod_unload modversions aarch64": 96
+  },
+  "trusted_certificates": [
+    {
+      "offset_in_list": 0,
+      "size": 1357,
+      "sha256": "545788f3ea9dc2907900a53e05daab6095a526380e65f9ab6abdf97d21a332d1"
+    },
+    {
+      "offset_in_list": 1357,
+      "size": 1357,
+      "sha256": "3d46262092ddcf253f9cf266d16be0bbd44f81bdc888c4d66dd26e388374e01a"
+    }
+  ],
+  "local_signing_certificate_preserved": true,
+  "stock_public_certificate_present": true,
+  "stock_signatures_verified_against_actual_vmlinux_keys": 96,
+  "unsigned_module_files": 972,
+  "gki_unsigned_restricted_imports": 0,
+  "gki_unsigned_affected_modules": [],
+  "gki_protected_export_denials": 0,
+  "generated_protected_symbols": 507,
+  "generated_unprotected_symbols": 9197,
+  "namespace_issues": [],
+  "gpl_license_incompatibilities": [],
+  "stock_exports_duplicate_kernel": [],
+  "vermagic_flag_issues": []
+}

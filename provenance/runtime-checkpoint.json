@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-07",
+  "scope": "Redacted summary of a fresh read-only checkpoint after the reported reset; no device-changing operation",
+  "device": "CPH2653",
+  "product": "OP5D55L1",
+  "firmware": "CPH2653_16.0.10.501(EX01)",
+  "root_access_confirmed": true,
+  "current_kernel": {
+    "GNU_build_id": "ba2c2d9b2a34b2ced8d64ff579998772af44131b",
+    "reference": "previous trust501 baseline"
+  },
+  "current_manager": {
+    "package": "com.sukisu.ultra",
+    "version_code": 40900,
+    "version_name": "v4.2.0"
+  },
+  "current_daemon": {
+    "version_string": "4.2.0-1-g904c60d1 (uapi: 2)",
+    "sha256": "9f57222b06222f461bbb69b24e40a293e34708eeb7b1bbb065110651f7b9c991",
+    "on_disk_equals_current_APK_daemon": true
+  },
+  "supplied_spoofed_manager_installed": false,
+  "Fix41_NVBK_alias_and_loop_backing_observed_applied": true,
+  "candidate": {
+    "GNU_build_id": "388fd5878edc89a3fd3fd22b9c786f2426b403b9",
+    "uapi": 5,
+    "runtime_tested": false,
+    "transition": "NOT READY pending coordinated manager/daemon preparation"
+  },
+  "omitted": [
+    "device serials",
+    "app/user UIDs",
+    "personal app/module inventories",
+    "private runtime paths",
+    "raw logs"
+  ]
+}

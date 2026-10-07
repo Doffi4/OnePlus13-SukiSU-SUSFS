@@ -1,0 +1,185 @@
+{
+  "date": "2026-10-07",
+  "origin_scope": "Original project outputs and accepted local WSL source snapshots; no phone access",
+  "redactions": [
+    "Windows/WSL absolute output paths converted to relative labels",
+    "certificate file paths, identity strings and marker timestamps omitted",
+    "patch header paths normalized; hunk content retained",
+    "Runtime checkpoint reduced to public platform/daemon/kernel facts; personal device/app data omitted"
+  ],
+  "files": [
+    {
+      "source": "outputs/spoofed-uapi5/source-changes.json",
+      "source_sha256": "4d16826a61ae097af6a989d214a70ad9e81510aa9fe25ddd630682f70822ccec",
+      "destination": "provenance/source-changes.json",
+      "destination_sha256": "a14b2e4b7ffc939f4a3b3397ba4cb37271525ab205ef2e1cc2bf522493ec6000",
+      "transformation": "documented normalization/redaction"
+    },
+    {
+      "source": "outputs/spoofed-uapi5/source-preservation.json",
+      "source_sha256": "4f10dcb955b8d27046ade4d1339dfcbc3eebc0096493d6c3cfaaceeed8ca7b4a",
+      "destination": "provenance/source-preservation.json",
+      "destination_sha256": "305987d6d1a89fc2f0e8ca463896c41e2e3187358f463954786e7161e6ab3b3c",
+      "transformation": "documented normalization/redaction"
+    },
+    {
+      "source": "outputs/spoofed-uapi5/binary-UAPI-proof.json",
+      "source_sha256": "511624a90b5e3d7247d94d117b85e8c25e77b481f7e81f2af7eecdbe58f04c94",
+      "destination": "provenance/binary-UAPI-proof.json",
+      "destination_sha256": "8fd28b28e47101c53af4f435dae0e2723b6937222eb709ded2433620e08997b5",
+      "transformation": "documented normalization/redaction"
+    },
+    {
+      "source": "outputs/spoofed-uapi5/after-contracts.json",
+      "source_sha256": "450d7f3fe8a1500705406be275c23e074d3108e26a45b60e7f39d5579b715d51",
+      "destination": "provenance/after-contracts.json",
+      "destination_sha256": "bababb527f5039071c80b06476ea079e12749b6688065e9cc1c94c235550bc33",
+      "transformation": "documented normalization/redaction"
+    },
+    {
+      "source": "outputs/spoofed-uapi5/package-verification.json",
+      "source_sha256": "39679a0aeec183ca7378ecb43addee8e2961cb3e77e86e45aaec63e62525fc2c",
+      "destination": "provenance/package-verification.json",
+      "destination_sha256": "46984b2a729d8fba916ad7c19cdb3b6feeaafcdc19b3990cf109d5f1433470ff",
+      "transformation": "documented normalization/redaction"
+    },
+    {
+      "source": "outputs/spoofed-uapi5/KMI-checks.json",
+      "source_sha256": "80900a41994bbc8a9a95db6d8ada024a5537f877591bf306a1670be308794073",
+      "destination": "provenance/KMI-checks.json",
+      "destination_sha256": "104287c02603dc9ba3e04bd6645f7e7af587e9716a50d782178cc73b3c5c36fb",
+      "transformation": "documented normalization/redaction"
+    },
+    {
+      "source": "outputs/spoofed-uapi5/audit/summary.json",
+      "source_sha256": "e7276fd410c1ce28e544423f52c3110066fa1cd6e722e5d1d33c732084a4e463",
+      "destination": "provenance/audit-summary.json",
+      "destination_sha256": "1717f71bb6c1f26089030e23c6068bff43773bcd4775a33eb1938152d84a5468",
+      "transformation": "documented normalization/redaction"
+    },
+    {
+      "source": "outputs/trust501/evidence/source-manifest.xml",
+      "source_sha256": "59d471add64df4f302d2524436eb794e4eb8544ff94afdb561a2c444293acbff",
+      "destination": "provenance/source-manifest.xml",
+      "destination_sha256": "59d471add64df4f302d2524436eb794e4eb8544ff94afdb561a2c444293acbff",
+      "transformation": "byte-for-byte"
+    },
+    {
+      "source": "work/susfs/LICENSE",
+      "source_sha256": "88d60daf9dc621a9048afa02f74ffc707ccf77b399948a33f4517bb6293986de",
+      "destination": "licenses/SUSFS-GPL-3.0.txt",
+      "destination_sha256": "88d60daf9dc621a9048afa02f74ffc707ccf77b399948a33f4517bb6293986de",
+      "transformation": "byte-for-byte"
+    },
+    {
+      "source": "outputs/spoofed-uapi5/uapi5-compat.patch",
+      "source_sha256": "da962d0f26c21634bcac32f1c62f41eb4ec7f6a621e4d9ac8f360e8cba92afcd",
+      "destination": "patches/uapi5-compat.patch",
+      "destination_sha256": "f5cc662607b161902bf969313c594c98c2569ae89296c51d0dd6851638891af1",
+      "transformation": "documented normalization/redaction"
+    },
+    {
+      "source": "read-only accepted WSL working-tree snapshot",
+      "destination": "patches/common-current.patch",
+      "destination_sha256": "85d3ab8fb459662b40366a7053a4f3b960646bd72496e510bd61335425890a7c",
+      "transformation": "byte-for-byte git diff --binary / source snapshot"
+    },
+    {
+      "source": "read-only accepted WSL working-tree snapshot",
+      "destination": "patches/sukisu-current.patch",
+      "destination_sha256": "68352f3e897ceb230122991fff8f9273c6d254eee6e1b1c229f63f8b98b47340",
+      "transformation": "byte-for-byte git diff --binary / source snapshot"
+    },
+    {
+      "source": "read-only accepted WSL working-tree snapshot",
+      "destination": "patches/platform-current.patch",
+      "destination_sha256": "082425c54681853b95e9caecb913a73eb9aebc66796279d2b6bde59eaa0b8b74",
+      "transformation": "byte-for-byte git diff --binary / source snapshot"
+    },
+    {
+      "source": "read-only accepted WSL working-tree snapshot",
+      "destination": "patches/arch.h",
+      "destination_sha256": "8d633dae366f921408cf599e430bf9a0dea92544cddab907751a7367ef6233ac",
+      "transformation": "byte-for-byte git diff --binary / source snapshot"
+    },
+    {
+      "source": "accepted WSL tools/scripts/build-4k-wsl.sh",
+      "destination": "scripts/reference/build-4k-wsl.sh",
+      "destination_sha256": "58636298c490dbfaf7b2ac634a0ee66a02294e1c4904b4beaf90bf990a859853",
+      "transformation": "byte-for-byte snapshot; contains original local WSL base path"
+    },
+    {
+      "source": "accepted WSL tools/scripts/build-exact-4k.py",
+      "destination": "scripts/reference/build-exact-4k.py",
+      "destination_sha256": "cfdfa8d17f9f29cb8c18cc8fa0e7da536efcb207ffc9790bfbb40e24d4f45644",
+      "transformation": "byte-for-byte snapshot; contains original local WSL base path"
+    },
+    {
+      "source": "accepted WSL tools/scripts/check-modversion-cache.py",
+      "destination": "scripts/reference/check-modversion-cache.py",
+      "destination_sha256": "adc1baaae200598ca3fac4509bb2f31d57e918a92212ec5925b32391e013ad72",
+      "transformation": "byte-for-byte snapshot; contains original local WSL base path"
+    },
+    {
+      "source": "audited guarded kernel ZIP entry: anykernel.sh",
+      "source_sha256": "979d906ca9b46f633146857c6254f2a7758e1044ed2a8608b10121b7be8bcce2",
+      "destination": "installer/reference/anykernel.sh",
+      "destination_sha256": "979d906ca9b46f633146857c6254f2a7758e1044ed2a8608b10121b7be8bcce2",
+      "transformation": "byte-for-byte extraction; no executable tool binaries copied"
+    },
+    {
+      "source": "audited guarded kernel ZIP entry: tools/op13-target.sh",
+      "source_sha256": "18983379d88a99c180e2fdd0da4b12c4ce6f15b2df0addda5105509f910a7e04",
+      "destination": "installer/reference/op13-target.sh",
+      "destination_sha256": "18983379d88a99c180e2fdd0da4b12c4ce6f15b2df0addda5105509f910a7e04",
+      "transformation": "byte-for-byte extraction; no executable tool binaries copied"
+    },
+    {
+      "source": "audited guarded kernel ZIP entry: tools/ak3-core.sh",
+      "source_sha256": "fa978a37851f1d9207f838e634d056db81964a01bf0b1c8061879a8dcf5f6990",
+      "destination": "installer/reference/ak3-core.sh",
+      "destination_sha256": "fa978a37851f1d9207f838e634d056db81964a01bf0b1c8061879a8dcf5f6990",
+      "transformation": "byte-for-byte extraction; no executable tool binaries copied"
+    },
+    {
+      "source": "audited guarded kernel ZIP entry: LICENSE",
+      "source_sha256": "df6f65da47d459fdf2a2ef0eadb34f37d838befc91352b64a84f35507bea95cd",
+      "destination": "licenses/AnyKernel3-LICENSE.txt",
+      "destination_sha256": "df6f65da47d459fdf2a2ef0eadb34f37d838befc91352b64a84f35507bea95cd",
+      "transformation": "byte-for-byte extraction; no executable tool binaries copied"
+    },
+    {
+      "source": "accepted upstream source license snapshot: SukiSU-GPL-2.0.txt",
+      "destination": "licenses/SukiSU-GPL-2.0.txt",
+      "destination_sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "transformation": "byte-for-byte; retain per-file licensing"
+    },
+    {
+      "source": "accepted upstream source license snapshot: Linux-COPYING.txt",
+      "destination": "licenses/Linux-COPYING.txt",
+      "destination_sha256": "fb5a425bd3b3cd6071a3a9aff9909a859e7c1158d54d32e07658398cd67eb6a0",
+      "transformation": "byte-for-byte; retain per-file licensing"
+    },
+    {
+      "source": "accepted upstream source license snapshot: Linux-syscall-note.txt",
+      "destination": "licenses/Linux-syscall-note.txt",
+      "destination_sha256": "8e378ab93586eb55135d3bc119cce787f7324f48394777d00c34fa3d0be3303f",
+      "transformation": "byte-for-byte; retain per-file licensing"
+    },
+    {
+      "source": "accepted upstream source license snapshot: Linux-GPL-2.0.txt",
+      "destination": "licenses/Linux-GPL-2.0.txt",
+      "destination_sha256": "f6b78c087c3ebdf0f3c13415070dd480a3f35d8fc76f3d02180a407c1c812f79",
+      "transformation": "byte-for-byte; retain per-file licensing"
+    },
+    {
+      "source": "outputs/manager-transition/report.md",
+      "source_sha256": "28f489dcad94d06f026d3d8c5672d4e41fa0dec7e7e7697b56d6c81fee4340ce",
+      "destination": "provenance/runtime-checkpoint.json",
+      "destination_sha256": "04570466d0e66094b75e5e02675a157caa1d0cdc05a3142f2b5f8452a75616da",
+      "additional_source": "outputs/manager-transition/preflight-20261007-194231/followup-summary.json",
+      "additional_source_sha256": "0217825ee463125b698d4065fb42f3512abaeccc0689025cd5c3cd0554df2d4e",
+      "transformation": "Explicit field selection into English public summary; serials, UIDs, personal inventories, private paths and raw logs excluded"
+    }
+  ]
+}

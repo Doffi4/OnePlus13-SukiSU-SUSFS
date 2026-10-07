@@ -1,0 +1,18 @@
+{
+  "source_head": "70fa0e092a2c81060823f8ae526eac14fdda2930",
+  "changed_files": [
+    "kernel/include/uapi/supercall.h",
+    "kernel/supercall/dispatch.c",
+    "kernel/Makefile"
+  ],
+  "before_hashes": {
+    "kernel/include/uapi/supercall.h": "ee5935b13317a6044c9a7f421e9af8af1254609afb715acb01643e85fc1869c9",
+    "kernel/supercall/dispatch.c": "a02963e0b3b0f1ef43fa56cc6586a652676692d4183a741829abdea1d06e62f1",
+    "kernel/Makefile": "117897a50319f9d54c5788f82283129692a726107d99b4321c3c7596bfe073d0"
+  },
+  "after_hashes": {
+    "kernel/include/uapi/supercall.h": "9c1f5c55d194a8aa8e88a307eeaa865cb99e2728737e5d4c5a036fab687ac93b",
+    "kernel/supercall/dispatch.c": "4b2932e61382d4cdd67982e55a5945acdbf0a4d0d42da000cc74ef517fd7aaea",
+    "kernel/Makefile": "df151b1d8eb0758061950d8f85b0479df2dcce500f9e3e1c7e9f16a51fa7debd"
+  }
+}

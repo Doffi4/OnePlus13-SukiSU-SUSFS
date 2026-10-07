@@ -1,0 +1,20 @@
+# Build, device data and binaries belong outside this handoff.
+out/
+build/
+bazel-*/
+cache/
+__pycache__/
+*.pyc
+*.o
+*.ko
+*.img
+*.apk
+*.zip
+*.pem
+*.der
+*.key
+*.p12
+*.jks
+Image
+vmlinux
+.env*

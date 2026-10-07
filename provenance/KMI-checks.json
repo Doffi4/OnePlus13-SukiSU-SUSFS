@@ -1,0 +1,21 @@
+{
+  "native_build_exit_code": "0",
+  "checks": [
+    {
+      "path": "kernel_platform/bazel-bin/common/kernel_aarch64_kmi_strict_out/kmi_symbol_list_strict_mode_checked",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "kernel_platform/bazel-bin/common/kernel_aarch64_kmi_symbol_list_violations/kernel_aarch64_kmi_symbol_list_violations_checked",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "kernel_platform/bazel-bin/msm-kernel/sun_perf_kmi_symbol_list_violations/sun_perf_kmi_symbol_list_violations_checked",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    }
+  ],
+  "scope": "Native generated KMI symbol-list checks; unchanged 9001 exported symbols/CRCs. Not a full STG diff against unpublished .501 source."
+}

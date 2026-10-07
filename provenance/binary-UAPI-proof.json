@@ -1,0 +1,33 @@
+{
+  "kernel_GET_INFO_binary": "40959 version; features=5, uapi_version=5 packed at stack+0x10, copy_to_user=16 bytes; see kernel-GET_INFO-disassembly.txt",
+  "KPM_Image_functions": {
+    "do_get_info": {
+      "Image_offset": 13938112,
+      "bytes": 192,
+      "sha256": "c4a7f4b12170b74ee31c439c4adeb6c410e7de2eedad72b2c7f19f148c217ae7",
+      "raw_KPM_Image_equal_actual_vmlinux_function": true
+    },
+    "do_report_event": {
+      "Image_offset": 13938500,
+      "bytes": 360,
+      "sha256": "c03bf4329a3a0f86cc448e81ddf0b46a9a3f5501037492c05209b337d328dd58",
+      "raw_KPM_Image_equal_actual_vmlinux_function": true
+    },
+    "ksu_install_fd": {
+      "Image_offset": 13910784,
+      "bytes": 32,
+      "sha256": "51e82a0d004363e21c824e8b9f7b678a76af17a9390be31be355e244a89d2f53",
+      "raw_KPM_Image_equal_actual_vmlinux_function": true
+    },
+    "ksu_install_su_fd": {
+      "Image_offset": 13911096,
+      "bytes": 32,
+      "sha256": "2e5c94b1a7dca472fda892e176cd45536ed81da97a4bda92ad56edd6ab43b20e",
+      "raw_KPM_Image_equal_actual_vmlinux_function": true
+    }
+  },
+  "apk_signer_DER_bytes": 860,
+  "apk_signer_DER_sha256": "947ae944f3de4ed4c21a7e4f7953ecf351bfa2b36239da37a34111ad29993eef",
+  "matches_builtin_apk_sign_key_size_and_fingerprint": true,
+  "manager_package_hardcoded_in_compile_flags": false
+}

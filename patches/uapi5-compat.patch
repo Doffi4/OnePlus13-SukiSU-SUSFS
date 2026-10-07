@@ -1,0 +1,47 @@
+--- a/kernel/Makefile
++++ b/kernel/Makefile
+@@ -45,7 +45,7 @@
+ LOCAL_COUNT     := $(if $(GITHUB_COMMITS),$(GITHUB_COMMITS),$(git_commit_count))
+ KSU_VERSION     := $(if $(LOCAL_COUNT),$(shell expr $(VERSION_BASE) + $(LOCAL_COUNT) - $(VERSION_OFFSET)),13000)
+ VERSION_TAG     := $(or $(KSU_GITHUB_VER),$(git_latest_tag),4.2.0)
+-KSU_VERSION_FULL := $(if $(call git_short_sha),v$(VERSION_TAG)-$(call git_short_sha)@$(call git_branch),v$(VERSION_TAG)-$(REPO_NAME)-unknown@unknown)
++KSU_VERSION_FULL := $(if $(call git_short_sha),v$(VERSION_TAG)-$(call git_short_sha)@$(call git_branch),v$(VERSION_TAG)-$(REPO_NAME)-unknown@unknown)+uapi5-compat
+ $(info -- $(REPO_NAME) version: $(KSU_VERSION) [$(KSU_VERSION_FULL)])
+ 
+ ccflags-y += -DKSU_VERSION=$(KSU_VERSION)
+--- a/kernel/include/uapi/supercall.h
++++ b/kernel/include/uapi/supercall.h
+@@ -12,8 +12,11 @@
+ #define DECLARE(type, name, val) enum { name = val }
+ #endif
+ 
+-// 2: allowlist v4 root profile flag
+-DECLARE(__u32, KERNEL_SU_UAPI_VERSION, 2);
++// 2: allowlist v4 root profile flags
++// 3: scoped su-session driver fd
++// 4: add KSU_GET_INFO_FLAG_BUNDLED (clear for this builtin integration)
++// 5: add EVENT_SERVICES with a start/skip result
++DECLARE(__u32, KERNEL_SU_UAPI_VERSION, 5);
+ 
+ /* Magic numbers for reboot hook to install fd */
+ DECLARE(__u32, KSU_INSTALL_MAGIC1, 0xDEADBEEF);
+@@ -33,6 +36,7 @@
+ DECLARE(__u32, KSU_GET_INFO_FLAG_MANAGER, (1U << 1));
+ DECLARE(__u32, KSU_GET_INFO_FLAG_LATE_LOAD, (1U << 2));
+ DECLARE(__u32, KSU_GET_INFO_FLAG_PR_BUILD, (1U << 3));
++DECLARE(__u32, KSU_GET_INFO_FLAG_BUNDLED, (1U << 4));
+ 
+ struct ksu_get_info_cmd {
+     __u32 version; /* Output: KERNEL_SU_VERSION */
+--- a/kernel/supercall/dispatch.c
++++ b/kernel/supercall/dispatch.c
+@@ -21,6 +21,9 @@
+         cmd.flags |= KSU_GET_INFO_FLAG_MANAGER;
+     }
+ 
++#ifdef EXPECTED_SIZE2
++    cmd.flags |= KSU_GET_INFO_FLAG_PR_BUILD;
++#endif
+     cmd.features = KSU_FEATURE_MAX;
+     cmd.uapi_version = KERNEL_SU_UAPI_VERSION;
+ 
